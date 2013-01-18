@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<overlay id="WebTabsakuOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="JssMenuitem_m" label="Molsps" insertbefore="sanitizeSeparator" 
+	      oncommand="window.open('chrome://web_grep/content/main_window.xul','Jss','chrome,width=850,height=650');" />
+  </menupopup>
+</overlay>
