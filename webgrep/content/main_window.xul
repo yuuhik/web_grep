@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
-<window id="main-window" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Web_Grep">
+<window id="main-window" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="WebGrep">
 
-  <script type="application/x-javascript" src="chrome://web_grep/content/web_grep_main.js" />
-  <script type="application/x-javascript" src="chrome://web_grep/content/run.js" />
+  <script type="application/x-javascript" src="chrome://webgrep/content/web_grep_main.js" />
+  <script type="application/x-javascript" src="chrome://webgrep/content/run.js" />
   <hbox>
     <vbox align="left">
       <textbox id="programSource" multiline="true" rows="15" cols="30" value="(let ((x 123)) (setq make-count (lambda () (let ((x 0)) (lambda () (setq x (+ x 1)) x)))) (setq f (make-count)) (alert (f)) (alert (f)) (alert (f)) (alert (f)) (alert (f)) x)"/>
@@ -12,7 +12,7 @@
       <textbox id="actResult" multiline="true" rows="15" cols="30" />
     </vbox>
     <vbox>
-      <browser id="my_browser" src="chrome://web_grep/content/temp_html/hoge.html" type="content-primary" flex="1" width="500" height="500" />
+      <browser id="my_browser" src="chrome://webgrep/content/temp_html/hoge.html" type="content-primary" flex="1" width="500" height="500" />
       <button id="button1" label="Reload" context="button-context" oncommand="bwrReload();" />
       <!-- <button id="button2" label="テスト用" context="button-context" oncommand="getHttpXpcom();" /> -->
     </vbox>

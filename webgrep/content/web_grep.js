@@ -1204,7 +1204,7 @@ function bwrReload() { //読み込みボタンに対応
     
     var url = "/content/temp_html/hoge.html";
     //home
-    var url_chrome = "chrome://molsps/content/temp_html/hoge.html";
+    var url_chrome = "chrome://webgrep/content/temp_html/hoge.html";
     fileOutput(str, url);
     if (brw.getAttribute("src") === url_chrome) {
 	brw.reload();

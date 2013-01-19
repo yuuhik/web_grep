@@ -1,2 +1,0 @@
-content web_grep content/
-overlay chrome://browser/content/browser.xul chrome://web_grep/content/overlay.xul

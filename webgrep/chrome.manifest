@@ -1,0 +1,2 @@
+content webgrep content/
+overlay chrome://browser/content/browser.xul chrome://webgrep/content/overlay.xul
