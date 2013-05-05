@@ -4,6 +4,7 @@ Function.prototype.method = function (name, func) {
     this.prototype[name] = func;
     return this;
 };
+
 var MoLsp = (function () {
     var SymbolSet = [];
     var createSymbol = function (str) {
@@ -1433,7 +1434,7 @@ function fileOutput(str, path) { //文字列strをpathのファイルに保存.
     fileStream.close();
 }
 
-function bwrReload() { //読み込みボタンに対応
+var bwrReload = function () { //読み込みボタンに対応
     var brw = $("my_browser");
     var str = $("actResult").value;
 
@@ -1446,5 +1447,4 @@ function bwrReload() { //読み込みボタンに対応
     } else {
         brw.setAttribute("src", url_chrome);
     }
-}
-
+};

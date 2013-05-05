@@ -1,10 +1,12 @@
-function run() {
+
+var run = function () {
     var textBoxSrc = $("programSource");
     var textBoxRlt = $("actResult");
     
     //textBoxSrc.value = "Hello,World!";
     //alert(1);
-    var result = MoLsp.run(textBoxSrc.value);
+    var result = YKS.run(textBoxSrc.value);
     textBoxRlt.value = result;
     textBoxSrc.select();
-}
+};
+

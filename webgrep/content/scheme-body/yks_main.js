@@ -2,6 +2,7 @@
  * main.js
  * :author yuuhik
  */
+
 var YKS = {};
 YKS.sexpPrint = new SexpPrint();
 YKS.scaner = new Scaner();
